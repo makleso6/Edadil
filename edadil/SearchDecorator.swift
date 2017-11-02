@@ -21,9 +21,18 @@ import DTTableViewManager
     var manager = DTTableViewManager()
     
     @objc public func decorate() {
-        
+//        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 85.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         manager.startManaging(withDelegate: self)
         manager.register(ProductTableViewCell.self)
+//        manager.heightForCell(withItem: Product.self) { (item, index) -> CGFloat in
+//            return UITableViewAutomaticDimension
+//        }
+//        
+//        manager.estimatedHeightForCell(withItem: Product.self) { (item, index) -> CGFloat in
+//            return 100
+//        }
     }
     
     @objc public func set(data: [Product]) {
