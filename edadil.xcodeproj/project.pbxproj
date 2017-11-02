@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68BDDEB0EE1990636A3CAD06 /* Pods_edadil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4839BDD6E8B2B6BE5C668A79 /* Pods_edadil.framework */; };
+		7D1CEC745B8B0B4E6D856CD1 /* Pods_edadilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065DC59F08AFE1ABE4D1C0CA /* Pods_edadilTests.framework */; };
+		830F1C1A1EB49F6BEF024376 /* Pods_edadilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */; };
 		94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */; };
 		94D3D0C11FA344CF00DBD39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0C01FA344CF00DBD39C /* ViewController.swift */; };
-		94D3D0C41FA344CF00DBD39C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C21FA344CF00DBD39C /* Main.storyboard */; };
 		94D3D0C61FA344CF00DBD39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C51FA344CF00DBD39C /* Assets.xcassets */; };
 		94D3D0C91FA344CF00DBD39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */; };
 		94D3D0D41FA344D000DBD39C /* edadilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0D31FA344D000DBD39C /* edadilTests.swift */; };
 		94D3D0DF1FA344D000DBD39C /* edadilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0DE1FA344D000DBD39C /* edadilUITests.swift */; };
+		94D3D0EF1FA344EB00DBD39C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0EE1FA344EB00DBD39C /* SearchViewController.m */; };
+		94D3D0F11FA3450400DBD39C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F01FA3450400DBD39C /* MainTabBarViewController.swift */; };
+		94D3D0F41FA3455F00DBD39C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */; };
+		94D3D0F61FA346D200DBD39C /* SearchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */; };
+		94D3D0F81FA34FE000DBD39C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */; };
+		94D3D0FD1FA353F600DBD39C /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */; };
+		94D3D0FE1FA353F600DBD39C /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */; };
+		94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */; };
+		94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */; };
+		94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065DC59F08AFE1ABE4D1C0CA /* Pods_edadilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edadilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2B6D1FB05D9A9576FC0EE2 /* Pods-edadil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edadil/Pods-edadil.debug.xcconfig"; sourceTree = "<group>"; };
+		15E418B95C67E98CFC14C085 /* Pods-edadilUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edadilUITests/Pods-edadilUITests.release.xcconfig"; sourceTree = "<group>"; };
+		170C653EDBB2C4907E4CB523 /* Pods-edadilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edadilUITests/Pods-edadilUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edadilUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4839BDD6E8B2B6BE5C668A79 /* Pods_edadil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edadil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		518C952CD1C8BE5CC0C1663C /* Pods-edadil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadil.release.xcconfig"; path = "Pods/Target Support Files/Pods-edadil/Pods-edadil.release.xcconfig"; sourceTree = "<group>"; };
 		94D3D0BB1FA344CF00DBD39C /* edadil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edadil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D3D0C01FA344CF00DBD39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		94D3D0C31FA344CF00DBD39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94D3D0C51FA344CF00DBD39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D3D0C81FA344CF00DBD39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D3D0CA1FA344CF00DBD39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +65,22 @@
 		94D3D0DA1FA344D000DBD39C /* edadilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edadilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D3D0DE1FA344D000DBD39C /* edadilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edadilUITests.swift; sourceTree = "<group>"; };
 		94D3D0E01FA344D000DBD39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D3D0EC1FA344EB00DBD39C /* edadil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "edadil-Bridging-Header.h"; sourceTree = "<group>"; };
+		94D3D0ED1FA344EB00DBD39C /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		94D3D0EE1FA344EB00DBD39C /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		94D3D0F01FA3450400DBD39C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		94D3D0F31FA3455F00DBD39C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDecorator.swift; sourceTree = "<group>"; };
+		94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Product+CoreDataClass.m"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		94D3D0FA1FA353F600DBD39C /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Product+CoreDataProperties.h"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Product+CoreDataProperties.m"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		94D3D0FC1FA353F600DBD39C /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Product+CoreDataClass.h"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+FetchedResults.swift"; sourceTree = "<group>"; };
+		94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Importable.swift"; sourceTree = "<group>"; };
+		B09F268D1D61193B5FD0C4A3 /* Pods-edadilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6416EED0CF474619912E3CD /* Pods-edadilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BDDEB0EE1990636A3CAD06 /* Pods_edadil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1CEC745B8B0B4E6D856CD1 /* Pods_edadilTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F1C1A1EB49F6BEF024376 /* Pods_edadilUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3985C15FAB49283AA6838DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4839BDD6E8B2B6BE5C668A79 /* Pods_edadil.framework */,
+				065DC59F08AFE1ABE4D1C0CA /* Pods_edadilTests.framework */,
+				1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94D3D0B21FA344CF00DBD39C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +128,8 @@
 				94D3D0D21FA344D000DBD39C /* edadilTests */,
 				94D3D0DD1FA344D000DBD39C /* edadilUITests */,
 				94D3D0BC1FA344CF00DBD39C /* Products */,
+				FDA0D183066628FA06888CF1 /* Pods */,
+				3985C15FAB49283AA6838DCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +146,25 @@
 		94D3D0BD1FA344CF00DBD39C /* edadil */ = {
 			isa = PBXGroup;
 			children = (
+				94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */,
+				94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */,
+				94D3D0FA1FA353F600DBD39C /* Product+CoreDataProperties.h */,
+				94D3D0FC1FA353F600DBD39C /* Product+CoreDataClass.h */,
+				94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */,
+				94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */,
 				94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */,
+				94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */,
 				94D3D0C01FA344CF00DBD39C /* ViewController.swift */,
-				94D3D0C21FA344CF00DBD39C /* Main.storyboard */,
 				94D3D0C51FA344CF00DBD39C /* Assets.xcassets */,
 				94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */,
 				94D3D0CA1FA344CF00DBD39C /* Info.plist */,
+				94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */,
+				94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */,
+				94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */,
+				94D3D0ED1FA344EB00DBD39C /* SearchViewController.h */,
+				94D3D0EE1FA344EB00DBD39C /* SearchViewController.m */,
+				94D3D0EC1FA344EB00DBD39C /* edadil-Bridging-Header.h */,
+				94D3D0F01FA3450400DBD39C /* MainTabBarViewController.swift */,
 			);
 			path = edadil;
 			sourceTree = "<group>";
@@ -125,6 +187,19 @@
 			path = edadilUITests;
 			sourceTree = "<group>";
 		};
+		FDA0D183066628FA06888CF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A2B6D1FB05D9A9576FC0EE2 /* Pods-edadil.debug.xcconfig */,
+				518C952CD1C8BE5CC0C1663C /* Pods-edadil.release.xcconfig */,
+				B09F268D1D61193B5FD0C4A3 /* Pods-edadilTests.debug.xcconfig */,
+				D6416EED0CF474619912E3CD /* Pods-edadilTests.release.xcconfig */,
+				170C653EDBB2C4907E4CB523 /* Pods-edadilUITests.debug.xcconfig */,
+				15E418B95C67E98CFC14C085 /* Pods-edadilUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94D3D0E31FA344D000DBD39C /* Build configuration list for PBXNativeTarget "edadil" */;
 			buildPhases = (
+				F58C827B988919E4CC2F1C3F /* [CP] Check Pods Manifest.lock */,
 				94D3D0B71FA344CF00DBD39C /* Sources */,
 				94D3D0B81FA344CF00DBD39C /* Frameworks */,
 				94D3D0B91FA344CF00DBD39C /* Resources */,
+				CF2AEE9BBDF9AB6253B39CEE /* [CP] Embed Pods Frameworks */,
+				67E7C9A8D73FDBE4C0740BBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94D3D0E61FA344D000DBD39C /* Build configuration list for PBXNativeTarget "edadilTests" */;
 			buildPhases = (
+				44BA6E5BB133EB1B5E2A667C /* [CP] Check Pods Manifest.lock */,
 				94D3D0CB1FA344D000DBD39C /* Sources */,
 				94D3D0CC1FA344D000DBD39C /* Frameworks */,
 				94D3D0CD1FA344D000DBD39C /* Resources */,
+				AE2455B049C99C660F498ECC /* [CP] Embed Pods Frameworks */,
+				7CB53A39B91B86B2F74BA9B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94D3D0E91FA344D000DBD39C /* Build configuration list for PBXNativeTarget "edadilUITests" */;
 			buildPhases = (
+				48920719CD2B7F3359DB0036 /* [CP] Check Pods Manifest.lock */,
 				94D3D0D61FA344D000DBD39C /* Sources */,
 				94D3D0D71FA344D000DBD39C /* Frameworks */,
 				94D3D0D81FA344D000DBD39C /* Resources */,
+				BF765A8872BFE29488DF4ABD /* [CP] Embed Pods Frameworks */,
+				8739BB3E926BF6673BCA8362 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +277,7 @@
 				TargetAttributes = {
 					94D3D0BA1FA344CF00DBD39C = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					94D3D0CE1FA344D000DBD39C = {
@@ -234,7 +319,6 @@
 			files = (
 				94D3D0C91FA344CF00DBD39C /* LaunchScreen.storyboard in Resources */,
 				94D3D0C61FA344CF00DBD39C /* Assets.xcassets in Resources */,
-				94D3D0C41FA344CF00DBD39C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +338,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44BA6E5BB133EB1B5E2A667C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edadilTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48920719CD2B7F3359DB0036 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edadilUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E7C9A8D73FDBE4C0740BBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadil/Pods-edadil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB53A39B91B86B2F74BA9B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8739BB3E926BF6673BCA8362 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadilUITests/Pods-edadilUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2455B049C99C660F498ECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF765A8872BFE29488DF4ABD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadilUITests/Pods-edadilUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2AEE9BBDF9AB6253B39CEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-edadil/Pods-edadil-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DTModelStorage/DTModelStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/DTTableViewManager/DTTableViewManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTModelStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTTableViewManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-edadil/Pods-edadil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58C827B988919E4CC2F1C3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edadil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94D3D0B71FA344CF00DBD39C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */,
 				94D3D0C11FA344CF00DBD39C /* ViewController.swift in Sources */,
+				94D3D0F11FA3450400DBD39C /* MainTabBarViewController.swift in Sources */,
+				94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */,
+				94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */,
+				94D3D0F81FA34FE000DBD39C /* ProductTableViewCell.swift in Sources */,
+				94D3D0F41FA3455F00DBD39C /* Model.xcdatamodeld in Sources */,
+				94D3D0F61FA346D200DBD39C /* SearchDecorator.swift in Sources */,
+				94D3D0EF1FA344EB00DBD39C /* SearchViewController.m in Sources */,
 				94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */,
+				94D3D0FD1FA353F600DBD39C /* Product+CoreDataClass.m in Sources */,
+				94D3D0FE1FA353F600DBD39C /* Product+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		94D3D0C21FA344CF00DBD39C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94D3D0C31FA344CF00DBD39C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,14 +668,19 @@
 		};
 		94D3D0E41FA344D000DBD39C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2B6D1FB05D9A9576FC0EE2 /* Pods-edadil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
 				INFOPLIST_FILE = edadil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.maxim.edadil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "edadil/edadil-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +688,18 @@
 		};
 		94D3D0E51FA344D000DBD39C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518C952CD1C8BE5CC0C1663C /* Pods-edadil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
 				INFOPLIST_FILE = edadil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.maxim.edadil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "edadil/edadil-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +707,7 @@
 		};
 		94D3D0E71FA344D000DBD39C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09F268D1D61193B5FD0C4A3 /* Pods-edadilTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +725,7 @@
 		};
 		94D3D0E81FA344D000DBD39C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6416EED0CF474619912E3CD /* Pods-edadilTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +743,7 @@
 		};
 		94D3D0EA1FA344D000DBD39C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170C653EDBB2C4907E4CB523 /* Pods-edadilUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +760,7 @@
 		};
 		94D3D0EB1FA344D000DBD39C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E418B95C67E98CFC14C085 /* Pods-edadilUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +815,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94D3D0F31FA3455F00DBD39C /* Model.xcdatamodel */,
+			);
+			currentVersion = 94D3D0F31FA3455F00DBD39C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 94D3D0B31FA344CF00DBD39C /* Project object */;
 }
