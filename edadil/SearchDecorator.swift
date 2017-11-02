@@ -27,8 +27,6 @@ import DTTableViewManager
     }
     
     @objc public func set(data: [Product]) {
-        //print(data)
-        //let sorted = data.sorted(by: <#T##(Product, Product) throws -> Bool#>)
         manager.memoryStorage.setItems(data)
     }
 

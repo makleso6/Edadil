@@ -35,12 +35,8 @@
     
     
     
-    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K CONTAINS[cd] %@",@"text", @"зо"];
-    //NSArray *articles = [SCArticle MR_findAllWithPredicate:predicate];
     [self searchWith:nil];
     
-    //[self decorate];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,30 +49,13 @@
     if (searchText.length > 0) {
         predicate = [NSPredicate predicateWithFormat:@"%K CONTAINS[cd] %@",@"text", searchText];
     }
-    //NSArray *articles = [SCArticle MR_findAllWithPredicate:predicate];
     NSArray *products = [Product MR_findAllSortedBy:@"text" ascending:YES withPredicate:predicate];
     if (searchText.length > 0) {
         products = [products sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
             Product *product1 = obj1;
             Product *product2 = obj2;
-//            //NSLog(@"%ld",(long)[product1.text compare:searchText]);
-//            //NSLog(@"%ld",(long)[product2.text compare:searchText]);
             NSRange range1 = [product1.text rangeOfString:searchText options:NSCaseInsensitiveSearch range:NSMakeRange(0,product1.text.length)];
             NSRange range2 = [product2.text rangeOfString:searchText options:NSCaseInsensitiveSearch range:NSMakeRange(0,product2.text.length)];
-            NSLog(@"%@", product2.text);
-            int location1 = range1.location;
-            int location2 = range2.location;
-
-            //[product2.text rangeOfString://""]
-            if (range2.location  == NSNotFound) {
-                NSLog(@"Not");
-                
-            }
-            //NSLog(@"%lu",(unsigned long)range1.location);
-            NSLog(@"%d",location1);
-            NSLog(@"%d",location2);
-
-            //[product1.text rangeOfString:searchText options:NSStringCompareOptions];
             return range1.location > range2.location;
         }];
     }
