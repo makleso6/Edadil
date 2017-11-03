@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = SearchViewController()
+        window?.rootViewController = MainTabBarViewController()
         window?.makeKeyAndVisible()
         return true
     }

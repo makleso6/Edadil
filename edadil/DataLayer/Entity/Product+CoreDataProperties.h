@@ -2,7 +2,7 @@
 //  Product+CoreDataProperties.h
 //  
 //
-//  Created by MAXIM KOLESNIK on 27.10.2017.
+//  Created by MAXIM KOLESNIK on 03.11.2017.
 //
 //
 
@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int64_t price;
 @property (nullable, nonatomic, copy) NSString *retailer;
 @property (nullable, nonatomic, copy) NSString *text;
+@property (nonatomic) BOOL isSave;
 
 @end
 

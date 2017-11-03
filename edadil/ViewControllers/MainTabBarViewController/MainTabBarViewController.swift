@@ -13,6 +13,16 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let searchViewController = SearchViewController()
+        searchViewController.title = "Поиск"
+        let listViewController = ListViewController()
+        listViewController.title = "Список покупок"
+
+        let navigationSearch = UINavigationController(rootViewController: searchViewController)
+        let navigationList = UINavigationController(rootViewController: listViewController)
+        
+        self.viewControllers = [navigationSearch, navigationList]
+
         // Do any additional setup after loading the view.
     }
 

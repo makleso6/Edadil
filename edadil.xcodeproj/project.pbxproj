@@ -12,6 +12,10 @@
 		830F1C1A1EB49F6BEF024376 /* Pods_edadilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */; };
 		9416071A1FACB9D4002275D5 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 941607171FACB9D3002275D5 /* Product+CoreDataClass.m */; };
 		9416071B1FACB9D4002275D5 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 941607181FACB9D3002275D5 /* Product+CoreDataProperties.m */; };
+		941607211FACCACC002275D5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941607201FACCACC002275D5 /* ListViewController.swift */; };
+		94A04D591FACEE0C0089A09A /* ListDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A04D581FACEE0C0089A09A /* ListDecorator.swift */; };
+		94A04D5B1FACEE3B0089A09A /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A04D5A1FACEE3B0089A09A /* ListPresenter.swift */; };
+		94A04D5E1FACEFBC0089A09A /* ProductStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A04D5D1FACEFBC0089A09A /* ProductStorage.swift */; };
 		94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */; };
 		94D3D0C61FA344CF00DBD39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C51FA344CF00DBD39C /* Assets.xcassets */; };
 		94D3D0C91FA344CF00DBD39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */; };
@@ -25,8 +29,6 @@
 		94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */; };
 		94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */; };
 		94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */; };
-		94E23D691FAB4F5F00BA77AC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E23D671FAB4F5F00BA77AC /* TableViewCell.swift */; };
-		94E23D6A1FAB4F5F00BA77AC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E23D681FAB4F5F00BA77AC /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		941607171FACB9D3002275D5 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
 		941607181FACB9D3002275D5 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
 		941607191FACB9D3002275D5 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
+		941607201FACCACC002275D5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		94A04D581FACEE0C0089A09A /* ListDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDecorator.swift; sourceTree = "<group>"; };
+		94A04D5A1FACEE3B0089A09A /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		94A04D5D1FACEFBC0089A09A /* ProductStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStorage.swift; sourceTree = "<group>"; };
 		94D3D0BB1FA344CF00DBD39C /* edadil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edadil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D3D0C51FA344CF00DBD39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,8 +85,6 @@
 		94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+FetchedResults.swift"; sourceTree = "<group>"; };
 		94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Importable.swift"; sourceTree = "<group>"; };
-		94E23D671FAB4F5F00BA77AC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		94E23D681FAB4F5F00BA77AC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		B09F268D1D61193B5FD0C4A3 /* Pods-edadilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6416EED0CF474619912E3CD /* Pods-edadilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-edadilTests/Pods-edadilTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +160,7 @@
 		9416070F1FACB914002275D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9416071F1FACCAB1002275D5 /* ListViewController */,
 				9416071E1FACBA20002275D5 /* MainTabBarViewController */,
 				941607101FACB921002275D5 /* SearchViewController */,
 			);
@@ -240,6 +245,24 @@
 			path = MainTabBarViewController;
 			sourceTree = "<group>";
 		};
+		9416071F1FACCAB1002275D5 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				941607201FACCACC002275D5 /* ListViewController.swift */,
+				94A04D5A1FACEE3B0089A09A /* ListPresenter.swift */,
+				94A04D581FACEE0C0089A09A /* ListDecorator.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		94A04D5C1FACEFAD0089A09A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				94A04D5D1FACEFBC0089A09A /* ProductStorage.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		94D3D0B21FA344CF00DBD39C = {
 			isa = PBXGroup;
 			children = (
@@ -265,13 +288,12 @@
 		94D3D0BD1FA344CF00DBD39C /* edadil */ = {
 			isa = PBXGroup;
 			children = (
+				94A04D5C1FACEFAD0089A09A /* Core */,
 				9416070E1FACB900002275D5 /* Application */,
 				9416070C1FACB8E9002275D5 /* DataLayer */,
 				9416070D1FACB8F9002275D5 /* Extensions */,
 				941607141FACB955002275D5 /* Reusable */,
 				9416070F1FACB914002275D5 /* ViewControllers */,
-				94E23D671FAB4F5F00BA77AC /* TableViewCell.swift */,
-				94E23D681FAB4F5F00BA77AC /* TableViewCell.xib */,
 			);
 			path = edadil;
 			sourceTree = "<group>";
@@ -425,7 +447,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D3D0C91FA344CF00DBD39C /* LaunchScreen.storyboard in Resources */,
-				94E23D6A1FAB4F5F00BA77AC /* TableViewCell.xib in Resources */,
 				94D3D0C61FA344CF00DBD39C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +587,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-edadil/Pods-edadil-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/DTModelStorage/DTModelStorage.framework",
 				"${BUILT_PRODUCTS_DIR}/DTTableViewManager/DTTableViewManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
@@ -574,6 +596,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTModelStorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTTableViewManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
@@ -609,17 +632,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E23D691FAB4F5F00BA77AC /* TableViewCell.swift in Sources */,
+				94A04D5B1FACEE3B0089A09A /* ListPresenter.swift in Sources */,
 				94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */,
 				94D3D0F11FA3450400DBD39C /* MainTabBarViewController.swift in Sources */,
 				94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */,
 				94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */,
+				94A04D5E1FACEFBC0089A09A /* ProductStorage.swift in Sources */,
 				94D3D0F81FA34FE000DBD39C /* ProductTableViewCell.swift in Sources */,
 				94D3D0F41FA3455F00DBD39C /* Model.xcdatamodeld in Sources */,
+				94A04D591FACEE0C0089A09A /* ListDecorator.swift in Sources */,
 				94D3D0F61FA346D200DBD39C /* SearchDecorator.swift in Sources */,
 				9416071A1FACB9D4002275D5 /* Product+CoreDataClass.m in Sources */,
 				94D3D0EF1FA344EB00DBD39C /* SearchViewController.m in Sources */,
 				94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */,
+				941607211FACCACC002275D5 /* ListViewController.swift in Sources */,
 				9416071B1FACB9D4002275D5 /* Product+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

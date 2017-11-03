@@ -9,9 +9,11 @@
 import UIKit
 import DTModelStorage
 import SnapKit
+import AlamofireImage
 
 class ProductTableViewCell: UITableViewCell {
-
+    var product: Product?
+    
     lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor.red.withAlphaComponent(0.3)
@@ -64,14 +66,26 @@ class ProductTableViewCell: UITableViewCell {
 }
 
 extension ProductTableViewCell: ModelTransfer {
+    
     func update(with model: Product) {
+        product = model
         //self.textLabel?.text = model.text
         contentView.addSubview(productImageView)
+        if let url = URL(string: model.image ?? "") {
+            productImageView.af_setImage(withURL: url)
+        }
+        
+        
         contentView.addSubview(actionButton)
+        actionButton.addTarget(self, action: #selector(ProductTableViewCell.action(_:)), for: UIControlEvents.touchUpInside)
+        
         productImageView.snp.makeConstraints { (make) in
             make.width.height.equalTo(50)
             make.trailingMargin.top.equalTo(8)
         }
+        
+        let text = ProductStorage.isSave(model) ? "Delete" : "Add"
+        actionButton.setTitle(text, for: UIControlState.normal)
         actionButton.snp.makeConstraints { (make) in
             make.width.height.equalTo(50)
             make.top.equalTo(productImageView.snp.bottom).offset(8)
@@ -79,53 +93,63 @@ extension ProductTableViewCell: ModelTransfer {
             make.bottomMargin.equalTo(-8).priority(999)
         }
         
-        if let text = model.text {
-            contentView.addSubview(descriptionLabel)
-            descriptionLabel.text = text
-            descriptionLabel.snp.makeConstraints { (make) in
-                make.top.leading.equalTo(8)
-                make.trailing.equalTo(productImageView.snp.leading).offset(-8)
-                //make.bottomMargin.equalTo(-8).priority(999)
-
-            }
-        }
         
-        if let retailer = model.retailer {
-            contentView.addSubview(retailerLabel)
-            retailerLabel.text = retailer
+        //if let text = model.text {
+        contentView.addSubview(descriptionLabel)
+        descriptionLabel.text = model.text
+        descriptionLabel.snp.makeConstraints { (make) in
+            make.top.leading.equalTo(8)
+            make.trailing.equalTo(productImageView.snp.leading).offset(-8)
+            //make.bottomMargin.equalTo(-8).priority(999)
             
-            retailerLabel.snp.makeConstraints { (make) in
-                make.leading.equalTo(8)
-                make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
-                make.trailing.equalTo(productImageView.snp.leading).offset(-8)
-                //make.bottomMargin.equalTo(-8).priority(999)
-                
-            }
         }
+        //}
+        
+        //if let retailer = model.retailer {
+        contentView.addSubview(retailerLabel)
+        retailerLabel.text = model.retailer
+        
+        retailerLabel.snp.makeConstraints { (make) in
+            make.leading.equalTo(8)
+            make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
+            make.trailing.equalTo(productImageView.snp.leading).offset(-8)
+            //make.bottomMargin.equalTo(-8).priority(999)
+            
+        }
+        //}
         
         //if let retailer = model.price {
-            contentView.addSubview(priceLabel)
-            priceLabel.text = "\(model.price)"
+        contentView.addSubview(priceLabel)
+        priceLabel.text = "\(model.price)"
+        
+        priceLabel.snp.makeConstraints { (make) in
+            make.leading.equalTo(8)
+            make.top.equalTo(retailerLabel.snp.bottom).offset(8)
+            //make.trailing.equalTo(productImageView.snp.leading).offset(-8)
+            //make.bottomMargin.equalTo(-8).priority(999)
             
-            priceLabel.snp.makeConstraints { (make) in
-                make.leading.equalTo(8)
-                make.top.equalTo(retailerLabel.snp.bottom).offset(8)
-                //make.trailing.equalTo(productImageView.snp.leading).offset(-8)
-                //make.bottomMargin.equalTo(-8).priority(999)
-                
-            }
+        }
         //if let discount = model.discount
         contentView.addSubview(discountLabel)
         discountLabel.text = "\(model.discount)"
-
+        
         discountLabel.snp.makeConstraints { (make) in
             make.leading.equalTo(priceLabel.snp.trailing).offset(8)
+            make.width.equalTo(priceLabel.snp.width)
             make.trailing.equalTo(productImageView.snp.leading).offset(-8)
             make.top.equalTo(retailerLabel.snp.bottom).offset(8)
             //make.trailing.equalTo(productImageView.snp.leading).offset(-8)
             make.bottomMargin.equalTo(-8).priority(999)
             
         }
+        
+    }
+    
+    @objc func action(_ button: UIButton) {
+        guard let product = product else { return }
+        ProductStorage.action(product)
+        let text = ProductStorage.isSave(product) ? "Delete" : "Add"
+        actionButton.setTitle(text, for: UIControlState.normal)
         
     }
 }

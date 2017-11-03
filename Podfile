@@ -10,6 +10,7 @@ target 'edadil' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'MagicalRecord'
   pod 'Alamofire'
+  pod 'AlamofireImage'
   target 'edadilTests' do
     inherit! :search_paths
     # Pods for testing

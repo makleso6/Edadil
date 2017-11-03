@@ -30,13 +30,21 @@
     self.decorator = [[SearchDecorator alloc] init];
     self.presenter = [[SearchPresenter alloc] init];
     self.decorator.objectToDecorate = self;
-    [self.decorator decorate];
     [self.presenter load];
+    [self.decorator decorate];
     
     
     
     [self searchWith:nil];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //[self.presenter load];
+    [self searchWith:self.searchController.searchBar.text];
+    //[self.decorator decorate];
+
 }
 
 - (void)didReceiveMemoryWarning {

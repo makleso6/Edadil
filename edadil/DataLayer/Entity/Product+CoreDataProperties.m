@@ -2,7 +2,7 @@
 //  Product+CoreDataProperties.m
 //  
 //
-//  Created by MAXIM KOLESNIK on 27.10.2017.
+//  Created by MAXIM KOLESNIK on 03.11.2017.
 //
 //
 
@@ -19,5 +19,6 @@
 @dynamic price;
 @dynamic retailer;
 @dynamic text;
+@dynamic isSave;
 
 @end
