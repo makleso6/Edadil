@@ -26,6 +26,7 @@ import DTTableViewManager
         tableView.rowHeight = UITableViewAutomaticDimension
         manager.startManaging(withDelegate: self)
         manager.register(ProductTableViewCell.self)
+        //manager.register(TableViewCell.self)
 //        manager.heightForCell(withItem: Product.self) { (item, index) -> CGFloat in
 //            return UITableViewAutomaticDimension
 //        }

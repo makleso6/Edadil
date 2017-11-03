@@ -10,8 +10,9 @@
 		68BDDEB0EE1990636A3CAD06 /* Pods_edadil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4839BDD6E8B2B6BE5C668A79 /* Pods_edadil.framework */; };
 		7D1CEC745B8B0B4E6D856CD1 /* Pods_edadilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065DC59F08AFE1ABE4D1C0CA /* Pods_edadilTests.framework */; };
 		830F1C1A1EB49F6BEF024376 /* Pods_edadilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */; };
+		9416071A1FACB9D4002275D5 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 941607171FACB9D3002275D5 /* Product+CoreDataClass.m */; };
+		9416071B1FACB9D4002275D5 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 941607181FACB9D3002275D5 /* Product+CoreDataProperties.m */; };
 		94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */; };
-		94D3D0C11FA344CF00DBD39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0C01FA344CF00DBD39C /* ViewController.swift */; };
 		94D3D0C61FA344CF00DBD39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C51FA344CF00DBD39C /* Assets.xcassets */; };
 		94D3D0C91FA344CF00DBD39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */; };
 		94D3D0D41FA344D000DBD39C /* edadilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0D31FA344D000DBD39C /* edadilTests.swift */; };
@@ -21,8 +22,6 @@
 		94D3D0F41FA3455F00DBD39C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */; };
 		94D3D0F61FA346D200DBD39C /* SearchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */; };
 		94D3D0F81FA34FE000DBD39C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */; };
-		94D3D0FD1FA353F600DBD39C /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */; };
-		94D3D0FE1FA353F600DBD39C /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */; };
 		94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */; };
 		94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */; };
 		94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */; };
@@ -55,9 +54,12 @@
 		1F36B4473F1CA00743F7090D /* Pods_edadilUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edadilUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4839BDD6E8B2B6BE5C668A79 /* Pods_edadil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edadil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518C952CD1C8BE5CC0C1663C /* Pods-edadil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edadil.release.xcconfig"; path = "Pods/Target Support Files/Pods-edadil/Pods-edadil.release.xcconfig"; sourceTree = "<group>"; };
+		941607161FACB9D3002275D5 /* Product+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataClass.h"; sourceTree = "<group>"; };
+		941607171FACB9D3002275D5 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
+		941607181FACB9D3002275D5 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
+		941607191FACB9D3002275D5 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
 		94D3D0BB1FA344CF00DBD39C /* edadil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edadil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94D3D0C01FA344CF00DBD39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94D3D0C51FA344CF00DBD39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D3D0C81FA344CF00DBD39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D3D0CA1FA344CF00DBD39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,10 +76,6 @@
 		94D3D0F31FA3455F00DBD39C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDecorator.swift; sourceTree = "<group>"; };
 		94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Product+CoreDataClass.m"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		94D3D0FA1FA353F600DBD39C /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Product+CoreDataProperties.h"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Product+CoreDataProperties.m"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		94D3D0FC1FA353F600DBD39C /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Product+CoreDataClass.h"; path = "/Users/maxim/Desktop/edadil/edadil/Product+CoreDataClass.h"; sourceTree = "<absolute>"; };
 		94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+FetchedResults.swift"; sourceTree = "<group>"; };
 		94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Importable.swift"; sourceTree = "<group>"; };
@@ -125,15 +123,132 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9416070C1FACB8E9002275D5 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9416071C1FACB9D8002275D5 /* Entity */,
+				9416071D1FACB9DF002275D5 /* Model */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9416070D1FACB8F9002275D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */,
+				94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9416070E1FACB900002275D5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */,
+				94D3D0C51FA344CF00DBD39C /* Assets.xcassets */,
+				94D3D0CA1FA344CF00DBD39C /* Info.plist */,
+				94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */,
+				94D3D0EC1FA344EB00DBD39C /* edadil-Bridging-Header.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9416070F1FACB914002275D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9416071E1FACBA20002275D5 /* MainTabBarViewController */,
+				941607101FACB921002275D5 /* SearchViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		941607101FACB921002275D5 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				941607131FACB942002275D5 /* Decorator */,
+				941607121FACB93B002275D5 /* Presenter */,
+				941607111FACB92F002275D5 /* View */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		941607111FACB92F002275D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0ED1FA344EB00DBD39C /* SearchViewController.h */,
+				94D3D0EE1FA344EB00DBD39C /* SearchViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		941607121FACB93B002275D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		941607131FACB942002275D5 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		941607141FACB955002275D5 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				941607151FACB961002275D5 /* UITableViewCell */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		941607151FACB961002275D5 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		9416071C1FACB9D8002275D5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				941607161FACB9D3002275D5 /* Product+CoreDataClass.h */,
+				941607171FACB9D3002275D5 /* Product+CoreDataClass.m */,
+				941607191FACB9D3002275D5 /* Product+CoreDataProperties.h */,
+				941607181FACB9D3002275D5 /* Product+CoreDataProperties.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9416071D1FACB9DF002275D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9416071E1FACBA20002275D5 /* MainTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				94D3D0F01FA3450400DBD39C /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBarViewController;
+			sourceTree = "<group>";
+		};
 		94D3D0B21FA344CF00DBD39C = {
 			isa = PBXGroup;
 			children = (
+				3985C15FAB49283AA6838DCD /* Frameworks */,
+				FDA0D183066628FA06888CF1 /* Pods */,
+				94D3D0BC1FA344CF00DBD39C /* Products */,
 				94D3D0BD1FA344CF00DBD39C /* edadil */,
 				94D3D0D21FA344D000DBD39C /* edadilTests */,
 				94D3D0DD1FA344D000DBD39C /* edadilUITests */,
-				94D3D0BC1FA344CF00DBD39C /* Products */,
-				FDA0D183066628FA06888CF1 /* Pods */,
-				3985C15FAB49283AA6838DCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,27 +265,13 @@
 		94D3D0BD1FA344CF00DBD39C /* edadil */ = {
 			isa = PBXGroup;
 			children = (
-				94D3D1011FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift */,
-				94D3D1021FA3566B00DBD39C /* NSManagedObject+Importable.swift */,
-				94D3D0FA1FA353F600DBD39C /* Product+CoreDataProperties.h */,
-				94D3D0FC1FA353F600DBD39C /* Product+CoreDataClass.h */,
-				94D3D0F91FA353F600DBD39C /* Product+CoreDataClass.m */,
-				94D3D0FB1FA353F600DBD39C /* Product+CoreDataProperties.m */,
-				94D3D0BE1FA344CF00DBD39C /* AppDelegate.swift */,
-				94D3D0F21FA3455F00DBD39C /* Model.xcdatamodeld */,
-				94D3D0C01FA344CF00DBD39C /* ViewController.swift */,
-				94D3D0C51FA344CF00DBD39C /* Assets.xcassets */,
-				94D3D0C71FA344CF00DBD39C /* LaunchScreen.storyboard */,
-				94D3D0CA1FA344CF00DBD39C /* Info.plist */,
-				94D3D0F51FA346D200DBD39C /* SearchDecorator.swift */,
-				94D3D0FF1FA3550400DBD39C /* SearchPresenter.swift */,
+				9416070E1FACB900002275D5 /* Application */,
+				9416070C1FACB8E9002275D5 /* DataLayer */,
+				9416070D1FACB8F9002275D5 /* Extensions */,
+				941607141FACB955002275D5 /* Reusable */,
+				9416070F1FACB914002275D5 /* ViewControllers */,
 				94E23D671FAB4F5F00BA77AC /* TableViewCell.swift */,
 				94E23D681FAB4F5F00BA77AC /* TableViewCell.xib */,
-				94D3D0F71FA34FE000DBD39C /* ProductTableViewCell.swift */,
-				94D3D0ED1FA344EB00DBD39C /* SearchViewController.h */,
-				94D3D0EE1FA344EB00DBD39C /* SearchViewController.m */,
-				94D3D0EC1FA344EB00DBD39C /* edadil-Bridging-Header.h */,
-				94D3D0F01FA3450400DBD39C /* MainTabBarViewController.swift */,
 			);
 			path = edadil;
 			sourceTree = "<group>";
@@ -178,8 +279,8 @@
 		94D3D0D21FA344D000DBD39C /* edadilTests */ = {
 			isa = PBXGroup;
 			children = (
-				94D3D0D31FA344D000DBD39C /* edadilTests.swift */,
 				94D3D0D51FA344D000DBD39C /* Info.plist */,
+				94D3D0D31FA344D000DBD39C /* edadilTests.swift */,
 			);
 			path = edadilTests;
 			sourceTree = "<group>";
@@ -187,8 +288,8 @@
 		94D3D0DD1FA344D000DBD39C /* edadilUITests */ = {
 			isa = PBXGroup;
 			children = (
-				94D3D0DE1FA344D000DBD39C /* edadilUITests.swift */,
 				94D3D0E01FA344D000DBD39C /* Info.plist */,
+				94D3D0DE1FA344D000DBD39C /* edadilUITests.swift */,
 			);
 			path = edadilUITests;
 			sourceTree = "<group>";
@@ -510,17 +611,16 @@
 			files = (
 				94E23D691FAB4F5F00BA77AC /* TableViewCell.swift in Sources */,
 				94D3D1031FA3566B00DBD39C /* NSManagedObject+FetchedResults.swift in Sources */,
-				94D3D0C11FA344CF00DBD39C /* ViewController.swift in Sources */,
 				94D3D0F11FA3450400DBD39C /* MainTabBarViewController.swift in Sources */,
 				94D3D1001FA3550400DBD39C /* SearchPresenter.swift in Sources */,
 				94D3D1041FA3566B00DBD39C /* NSManagedObject+Importable.swift in Sources */,
 				94D3D0F81FA34FE000DBD39C /* ProductTableViewCell.swift in Sources */,
 				94D3D0F41FA3455F00DBD39C /* Model.xcdatamodeld in Sources */,
 				94D3D0F61FA346D200DBD39C /* SearchDecorator.swift in Sources */,
+				9416071A1FACB9D4002275D5 /* Product+CoreDataClass.m in Sources */,
 				94D3D0EF1FA344EB00DBD39C /* SearchViewController.m in Sources */,
 				94D3D0BF1FA344CF00DBD39C /* AppDelegate.swift in Sources */,
-				94D3D0FD1FA353F600DBD39C /* Product+CoreDataClass.m in Sources */,
-				94D3D0FE1FA353F600DBD39C /* Product+CoreDataProperties.m in Sources */,
+				9416071B1FACB9D4002275D5 /* Product+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +662,7 @@
 				94D3D0C81FA344CF00DBD39C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -682,12 +783,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
-				INFOPLIST_FILE = edadil/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/edadil/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.maxim.edadil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "edadil/edadil-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "edadil/Application/edadil-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -702,12 +803,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
-				INFOPLIST_FILE = edadil/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/edadil/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.maxim.edadil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "edadil/edadil-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "edadil/Application/edadil-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

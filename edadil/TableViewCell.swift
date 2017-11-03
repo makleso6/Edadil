@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import DTModelStorage
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var descLabel: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +23,10 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension TableViewCell: ModelTransfer {
+    func update(with model: Product) {
+        descLabel.text = model.text
+    }
 }
