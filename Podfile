@@ -11,6 +11,8 @@ target 'edadil' do
   pod 'MagicalRecord'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'RxCocoa'
+  pod 'RxSwift'
   target 'edadilTests' do
     inherit! :search_paths
     # Pods for testing
