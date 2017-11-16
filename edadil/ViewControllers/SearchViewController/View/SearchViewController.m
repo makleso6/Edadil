@@ -42,7 +42,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     //[self.presenter load];
-    [self searchWith:self.searchController.searchBar.text];
+    //[self searchWith:self.searchController.searchBar.text];
+    [self.decorator setWithData: [self.presenter searchWithText:self.searchController.searchBar.text]];
+
     //[self.decorator decorate];
 
 }
@@ -57,6 +59,7 @@
     if (searchText.length > 0) {
         predicate = [NSPredicate predicateWithFormat:@"%K CONTAINS[cd] %@",@"text", searchText];
     }
+
     NSArray *products = [Product MR_findAllSortedBy:@"text" ascending:YES withPredicate:predicate];
     if (searchText.length > 0) {
         products = [products sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
@@ -70,15 +73,20 @@
     
     [self.decorator setWithData:products];
 }
+
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-    [self searchWith:searchText];
+    [self.decorator setWithData: [self.presenter searchWithText:searchText]];
+   
+///    [self searchWith:searchText];
     
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    [self searchWith:nil];
+    //[self searchWith:nil];
+    [self.decorator setWithData: [self.presenter searchWithText:nil]];
+
 }
 
 @end
